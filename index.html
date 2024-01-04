@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background: #3e3e3e;
+            color: aliceblue;
+        }
+        .titulo{
+
+        }
+        .comentarios:hover{
+            color: brown;
+        }
+        .emoji::before {
+            content: "✨";
+        }
+
+        emoji::after {
+            content: "💅";
+        }
+        .like{
+            color: aliceblue;
+            background-color: aqua;
+        }
+        .like:hover{
+            background-color: darkblue;
+
+        }
+        .contenedor{
+            display: flex;
+            justify-content: center;
+        }
+        .item{
+            width: 20%;
+            height: 10%;
+            margin: 10px;
+        }
+        .contenedor2{
+            display: flex;
+            position: relative;
+            justify-content: center;
+        }
+        .item2{
+            position: relative;
+            width: 40%;
+            height: 10%;
+            margin: 20px;
+            justify-content: center;
+            background-color: #6f4694;
+        }
+        .main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+        }
+
+
+        .cas1 {
+            position: relative;
+            z-index: 4;
+            margin-left: -50px;
+            height: 150px;
+            width: 150px;
+            border-radius: 75px;
+            background: rgb(30,33,45);
+            background: linear-gradient(29deg, rgba(30,33,45,1) 44%, rgba(182,137,112,1) 92%);
+        }
+
+        .cas2 {
+            z-index: 3;
+            margin-left: -50px;
+            height: 150px;
+            width: 150px;
+            border-radius: 75px;
+            background: rgb(30,33,45);
+            background: linear-gradient(29deg, rgba(30,33,45,1) 44%, rgba(182,137,112,1) 92%);
+        }
+
+        .cas3 {
+            z-index: 2;
+            margin-left: -50px;
+            height: 150px;
+            width: 150px;
+            border-radius: 75px;
+            background: rgb(30,33,45);
+            background: linear-gradient(29deg, rgba(30,33,45,1) 44%, rgba(182,137,112,1) 92%);
+        }
+        .cas4 {
+             z-index: 1;
+            margin-left: -50px;
+             height: 150px;
+             width: 150px;
+             border-radius: 75px;
+             background: rgb(30,33,45);
+             background: linear-gradient(29deg, rgba(30,33,45,1) 44%, rgba(182,137,112,1) 92%);
+         }
+        section{
+            display: flex;
+            justify-content: center ;
+        }
+        .card1{
+            background: darkslategray;
+            border-radius: 20px;
+        }
+        .card1 img{
+            width: 90%;
+            border-radius: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+<section >
+    <div class="card1">
+        <h1 class="titulo">¿Cuáles son los elementos HTML?</h1>
+        <p>Los elementos son cada una de las partes que conforman
+            un archivo HTML. Su estructura contiene:</p>
+        <ul>
+            <li>
+                <p>
+                    Contenido: es el texto o elementos encerrados por la etiqueta, este valor es opcional en algunas de ellas.
+                </p>
+                <img src="https://www.notion.so/image/https%3A%2F%2Fstatic.platzi.com%2Fmedia%2Farticlases%2FImages%2Ffrontend_developer09.png?table=block&id=ef1c2691-0d2e-4e23-b4f2-8b6b1d57d926&spaceId=c8bb466a-7b76-4832-bdd2-de7122db97d5&width=2000&userId=28d9fb20-dbdb-4de8-ad44-bda1722dcd09&cache=v2">
+
+            </li>
+        </ul>
+
+    </div>
+</section>
+<div>
+    <h2>Comentarios de HTML</h2>
+    <p class="comentarios emoji">
+
+        Los comentarios de HTML consiste en señalar algo que se
+        ignorará. Para establecer un comentario HTML se lo
+        envuelve entre <!-- -->`, independiente de la cantidad de líneas.
+    </p>
+
+</div>
+
+<div class="contenedor">
+    <div class="item">
+        <h3>:hover</h3>
+        <p>
+
+            Representa el estado en el cual el cursor está encima del elemento.</p>
+    </div>
+    <div class="item">
+        <h3>:active</h3>
+        <p>
+
+            Representa el estado de un elemento que no ha sido visitado.</p>
+    </div>
+    <div class="item">
+        <h3>:visited</h3>
+        <p>
+
+
+            Representa el estado de un elemento que ya ha sido visitado.
+        </p>
+    </div>
+    <div class="item">
+        <h3>:not()</h3>
+        <p>
+
+
+            Representa el estado en el cual no coinciden los selectores que se indiquen.
+        </p>
+    </div>
+</div>
+<h2>La posición del elemento se la define con la propiedad position, mediante los siguientes valores:</h2>
+<div class="contenedor2">
+    <div class="item2 emoji">static</div>
+    <div class="item2 emoji">relative</div>
+    <div class="item2 emoji">absolute</div>
+    <div class="item2 emoji">sticky</div>
+</div>
+
+
+<div class="main">
+    <div class="cas1"></div>
+    <div class="cas2"></div>
+    <div class="cas3"></div>
+    <div class="cas4"></div>
+
+
+</div>
+<button class="like">Like</button>
+
+</body>
+</html>
